@@ -15,35 +15,31 @@
 	<body>
 		<div class="container-fluid">
 			<div class="row justify-content-center">
-				<div class="col-10">
-					<h1>Cryptology Calculator</h1>
-					<br />
-					<br /><br />
+									<h1 class="text-center mt-4">Cryptology Calculator</h1>
 
-					<div class="row">
-						<div class="col-3">
-							<ul id="test"></ul>
-						</div>
+				<div class="col-10">
+					<div class="row mt-5 ml-4">
 						<div class="col-7">
 							All calculations done in <big>Z</big> mod
-
 							<input id="inputN" value="26" type="number" size="6" required />
-							<br /><br />
-
-
-
 							<div id="terminal-wrapper">
-								<div id="terminal-toolbar">
-									<button id="clearButton">Clear</button>
-									<button id="helpButton">Help</button>
+								<div id="terminal-toolbar" class="mb-2 mt-2">
+									<button id="clearButton" class="btn btn-danger">Clear</button>
+									<button id="helpButton"
+									 class="btn btn-info">Help</button>
 								</div>
 								<div id="terminal"></div>
 							</div>
 						</div>
+							<div class="col-3 mt-4 ml-4">
+							<h1>Equations</h1>
+							<ul id="test">
+								
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="col-2">
-					<br />
+				<div class="col-2 m-auto">
 					<table>
 						<thead>
 							<tr>
@@ -90,6 +86,11 @@
 		html,
 		body {
 			width: 100%;
+		}
+		
+		.Terminal{
+
+			height:600px !important;
 		}
 	</style>
 
